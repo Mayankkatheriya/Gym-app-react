@@ -1,0 +1,57 @@
+header {
+    width: 100%;
+    padding: .5rem 2rem;
+}
+
+header h1 {
+    color: rgb(153,31,72);
+    margin-bottom: .5rem;
+}
+
+header p {
+    color: rgb(107 114 128);
+    margin-bottom: 2rem;
+}
+header ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    text-transform: uppercase;
+}
+header ul li {
+    background-color: rgb(164,163,159);
+    width: 100%;
+    padding: 14px 0;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+header ul li:hover {
+    background-color: rgb(153,30,72);
+}
+header ul li a {
+    color: #fff;
+}
+
+header ul li:nth-child(1) {
+    background-color: rgb(153,30,72);
+}
+.bx-menu-alt-left {
+    font-size: 2rem;
+    color: rgb(153,31,72);
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 475px) {
+    header p {
+        margin-bottom: 1rem;
+    }
+    header ul {
+        display: none;
+    }
+    .bx-menu-alt-left {
+        display: block;
+    }
+}
